@@ -23,7 +23,7 @@ function loadProjects() {
 // This function should return the projectId of the new project
 function newProjectId(){
  // Write code to create and return new Project Id
- return projects.length + 1; 
+ return projects.length > 0 ? projects.length + 1 : 1;
 }
 
 function saveNewProject() {
